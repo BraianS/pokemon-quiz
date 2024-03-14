@@ -1,0 +1,16 @@
+.about {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about__title {
+    font-size: 3em;
+    padding-bottom: 3rem;
+}
+
+.about__paragraph {
+    font-size: 2rem;
+}

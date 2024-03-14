@@ -1,0 +1,190 @@
+:root {
+
+    /*https://palettes.shecodes.io/palettes/218 */
+    .first-color {
+        background: #363636;
+    }
+
+    .second-color {
+        background: #dc2f2f;
+    }
+
+    .third-color {
+        background: #ff894c;
+    }
+
+    .fourth-color {
+        background: #f8f8f8;
+    }
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.background-color {
+    background-color: #fff;
+}
+
+a,
+li,
+ul,
+ol {
+    list-style: none;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+html,
+body {
+    min-height: 100vh;
+}
+
+.container {
+    width: 1140px;
+    margin: auto;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: center;
+    height: 50vh;
+    align-items: center;
+}
+
+.hero__header {
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(45deg, yellow, red 60%);
+    min-height: 50vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.hero__title {
+    height: 100px;
+}
+
+.hero__background {
+    height: 200px;
+}
+
+.hero__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: auto;
+    background-repeat: no-repeat;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-image: url(/assets/img/vector.png);    
+}
+
+.hero__thumbnail {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    filter: brightness(0%);
+}
+
+.hero__thumbnail.catch {
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    transition: 0.5s ease-in;
+    filter: brightness(100%);
+}
+
+.hero__button {
+    padding: 4px 10px 4px 10px;
+    text-transform: uppercase;
+    font-size: medium;
+    font-weight: 600;
+}
+
+.hero__footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+}
+
+.hero__input {
+    padding: 5px 0 5px 5px;
+    border-radius: 5px;
+    height: 50px;
+    font-size: larger;
+}
+
+.hero__form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    min-height: 30vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.contact__links {
+    flex: 1;
+}
+
+.button {
+    padding: 3px;
+    background-color: #fff;
+    font-size: 1.5rem;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    border-radius: 0.25em;
+}
+
+.divideline {
+    display: flex;
+    border: 1px solid black;
+}
+
+.license {
+    text-align: center;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+   ;
+}
+
+.footer {
+    height: 10vh;
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 1320px;
+        border: 1px solid green;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 540px;
+        border: 1px solid yellow;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 720px;
+        border: 1px solid blue;
+    }
+}

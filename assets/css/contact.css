@@ -1,0 +1,23 @@
+.contact {
+    display:flex;
+    height: 20vh;;   
+}
+
+.contact__links{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.LinkedIn {
+    color: var(--linkedin-color);
+}
+
+.contact__link {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.contact__icon {
+    height:50px;
+}
