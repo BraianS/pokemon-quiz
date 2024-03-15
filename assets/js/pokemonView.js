@@ -68,6 +68,7 @@ class PokemonView {
         const pokemonsCatch = storedData.filter(poke => poke.catch === true);
 
         this.pokemon__length.innerHTML = "You catch: "+pokemonsCatch.length+ " Pokemons";
+        this.pokemon__length.classList.add(".pokemon__length");
 
         const randomIndex = Math.floor(Math.random() * pokemonsDontCatch.length);
         console.log(pokemonsDontCatch[randomIndex].name);

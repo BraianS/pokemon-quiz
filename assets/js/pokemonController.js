@@ -1,7 +1,5 @@
 class PokemonController {
 
-   localStorage = null
-
    constructor(pokemonLocalStorage, pokemonView) {
 
       this.genSelected = "Gen 1";
