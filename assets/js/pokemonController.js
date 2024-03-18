@@ -69,7 +69,13 @@ class PokemonController {
       this.bindButtons('.pokemon__buttons');
 
       this.fetchPokemon(this.BUTTONS[0].NAME, this.BUTTONS[0].URL);
+      this.bindResetButton();
 
+   }
+
+   bindResetButton() {
+      this.pokemonView.bindResetButton();
+      this.fetchPokemon(this.BUTTONS[0].NAME, this.BUTTONS[0].URL);
    }
 
    fetchPokemon(genName,url) {

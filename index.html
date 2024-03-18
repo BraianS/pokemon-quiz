@@ -22,7 +22,6 @@
 <body>
 
   <nav class="nav">
-
     <li class="nav__list">
       <a class="nav__logo">Logo</a>
       <a class="nav__item" href="#hero">Catch Pokemon</a>
@@ -32,51 +31,54 @@
     </li>
   </nav>
 
-  <div>
-    <div class="hero" id="hero">
-      <div class="hero__header">
-        <div class="hero__wrapper">
-          <img class="hero__thumbnail" />
-        </div>
-
-        <img class="hero_pokemonimg" src="assets/img/pokemon.png">
+  <div class="hero" id="hero">
+    <div class="hero__header">
+      <div class="hero__wrapper">
+        <img class="hero__thumbnail" />
       </div>
-      <div class="container">
-        <div class="hero__body">
-          <div class="hero__welcome">
-            <h1 class="hero__title">Welcome to Pokemon Quiz</h1>
-          </div>
-          <form class="hero__form">
-
-            <h2 class="hero__info">Chose the Generation of your pokemon to play</h2>
-            <li class="pokemon__buttons">
-            </li>
-            <p class="hero__paragraph">Who is the Pokemon above? Please write his name below to check is is correct and Capture him</p>
-            <input class="hero__input" type="text" placeholder="who is this pokemon?" />
-
-            <p class="hero__pokeinfo"></p>
-          </form>
-        </div>
-      </div>
+      <img class="hero_pokemonimg" src="assets/img/pokemon.png">
     </div>
 
     <div class="container">
-      <content class="pokemon" id="explore-pokemon">
-
-        <h1 class="pokemon__title">Pokemons</h1>
-        <p class="pokemon__paragraph">
-          This is your pokemon did you catch of every generations
-        </p>
-        <p class="pokemon__length"></p>
-        <li class="pokemon__gens">
-        </li>
+      <div class="hero__body">
 
 
-        <div class="pokemon__body">
-          <div class="pokemon__card"></div>
-        </div>
+        <form class="hero__form">
+
+          <h2 class="hero__info">Chose the Generation of your pokemon to play</h2>
+          <li class="pokemon__buttons">
+          </li>
+          <p class="hero__paragraph">Who is the Pokemon above? Please write his name below to check is is correct
+            and
+            Capture him</p>
+          <input class="hero__input" type="text" placeholder="who is this pokemon?" />
+
+          <p class="hero__pokeinfo"></p>
+          <button type="button" class="button resetButton">Reset all Pokemons</button>
+        </form>
+
+
+      </div>
     </div>
+  </div>
 
+  </div>
+
+
+  <div class="container">
+    <content class="pokemon" id="explore-pokemon">
+
+      <h1 class="pokemon__title">Pokemons</h1>
+      <p class="pokemon__paragraph">
+        This is your pokemon did you catch of every generations
+      </p>
+      <p class="pokemon__length"></p>
+      <li class="pokemon__gens">
+      </li>
+
+      <div class="pokemon__body">
+        <div class="pokemon__card"></div>
+      </div>
     </content>
   </div>
 

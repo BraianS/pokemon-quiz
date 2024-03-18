@@ -6,7 +6,7 @@
 
     --paragraph-font-size: 1rem;
 
-    --primary-color:#fff;
+    --primary-color: #fff;
 
     /*https://palettes.shecodes.io/palettes/218 */
     .first-color {
@@ -60,15 +60,14 @@ body {
 .hero {
     display: flex;
     flex-direction: column;
+    height: 95vh;
+    border: 1px solid green;
 }
 
 .hero__body {
+    border: 1px solid red;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-self: center;
-    height: 50vh;
-    align-items: center;
 }
 
 .hero__header {
@@ -92,7 +91,7 @@ body {
     height: 250px;
     background-position: center;
     background-size: cover;
-    background-image: url(/assets/img/vector.png);    
+    background-image: url(/assets/img/vector.png);
 }
 
 .hero__thumbnail {
@@ -120,6 +119,7 @@ body {
 .hero__form {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .hero__title {
@@ -167,7 +167,7 @@ body {
     font-size: 18px;
     font-family: Arial, sans-serif;
     padding: 20px;
-   ;
+    ;
 }
 
 .footer {
@@ -175,16 +175,41 @@ body {
 }
 
 @media screen and (max-width: 1400px) {
+
     .container {
-        width: 1320px;
+        width: auto;
         border: 1px solid green;
+    }
+
+
+    .hero__body {
+        align-items: center;
+        border: 1px solid red;
+    }
+
+    .hero__body {
+        display: flex;
+        flex-direction: column;
+        
     }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px) {
     .container {
-        width: 540px;
-        border: 1px solid yellow;
+        width: auto;
+        border: 1px solid red;
+    }
+
+    .hero__header {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 960px;
+        border: 1px solid gray;
     }
 }
 
@@ -192,5 +217,12 @@ body {
     .container {
         width: 720px;
         border: 1px solid blue;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        width: 540px;
+        border: 1px solid yellow;
     }
 }

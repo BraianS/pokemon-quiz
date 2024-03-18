@@ -6,8 +6,15 @@ class PokemonView {
         this.pokeinfo = document.querySelector(".hero__pokeinfo");
         this.thumbnailPokemon = document.querySelector(".hero__thumbnail");
         this.pokemon__length = document.querySelector(".pokemon__length");
+        this.resetButton = document.querySelector(".resetButton");
 
         this.pokemonLocalStorage = pokemonLocalStorage;
+    }
+
+    bindResetButton(){
+        this.resetButton.addEventListener('click', () => {
+          this.pokemonLocalStorage.deleteAll();         
+        })
     }
 
     setPokemonSpriteIntoHeroThumbnail(pokemon) {

@@ -7,4 +7,8 @@ class PokemonLocalStorage {
     savePokemonData(gen,data) {
         localStorage.setItem(gen, JSON.stringify(data))
     }    
+
+    deleteAll(){
+        localStorage.clear();
+    }
 }
