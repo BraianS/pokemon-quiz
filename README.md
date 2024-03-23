@@ -13,6 +13,9 @@ The purpose of this project is to recreate the nostalgic experience of the "Who'
 * install npm [live server ](https://www.npmjs.com/package/live-server) and run http-server
 * Any modifications needed to be made to files/folders
 
+### Deployment
+
+This project is deployed on netlify, click here to see it running [Pokemons-quiz](https://pokemonsquiz.netlify.app/)
 
 ## Authors
 
